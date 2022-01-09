@@ -9,9 +9,7 @@
 }
 
 :any-link {
-  color: inherit;
-  background: none;
-  outline-color: #000143;
+  color: #000143;
   text-decoration-style: wavy;
 }
 
