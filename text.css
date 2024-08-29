@@ -1,38 +1,53 @@
+:any-link {
+  text-decoration-style: wavy;
+}
+
 :focus {
-  outline-style: dotted;
-  outline-width: thick;
+  outline: thick dotted;
+  text-decoration-style: dotted;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: monospace;
   font-size: calc(1em + 1vmin + 2vmax);
+  line-height: 1.618;
+}
+
+@media (orientation: portrait) {
+  html {
+    font-family: sans-serif;
+  }
 }
 
 body {
-  padding: 1em;
+  contain: layout;
   display: flex;
   flex-flow: column;
   margin: auto;
+  padding: 1em;
 }
 
-article {
-  line-height: 1.5;
-}
-
-ol {
-  list-style: none;
+dl {
+  contain: layout;
+  display: flow-root;
+  margin-block: 3ex;
   padding: 0;
 }
 
-menu {
-  list-style: circle;
-  padding-inline-start: 1em;
+dt {
+  clear: both;
+  float: inline-start;
+  margin: 0;
 }
 
-li {
-  margin-block-start: .5ex;
-  margin-block-end: .5ex;
+dd {
+  float: inline-start;
+  margin: 0;
+  margin-inline-start: 1ex;
 }
+
+menu { padding: 0 }
+li { margin-block: 1ex }
 
 dfn,
 mark {
@@ -52,6 +67,8 @@ h1 {
 h2 {
   font: inherit;
   margin: 0;
-  font-family: monospace;
-  font-size: .67em;
+}
+
+.simp {
+  font-size: max(16pt, 0.666em);
 }

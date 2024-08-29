@@ -1,33 +1,28 @@
 ::selection {
-  background: black;
-  color: hotpink;
+  background: skyblue;
+  color: midnightblue;
 }
 
 :root {
-  color: #000143;
+  color: midnightblue;
   background: violet;
 }
 
 :any-link {
-  color: #000143;
-  text-decoration-style: wavy;
+  color: inherit;
 }
 
 dfn,
 mark {
-  color: #000143;
-  background: deeppink;
+  color: violet;
+  background: midnightblue;
 }
 
 @media (prefers-contrast: more) {
-  dfn,
-  mark {
-    background: thistle;
-  }
+  ::selection { background: powderblue }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: hotpink;
-  }
+@media (prefers-contrast: less) {
+  :root { background: orchid }
+  ::selection { background: orange }
 }
