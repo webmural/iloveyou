@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
-  <style media="(prefers-color-scheme: dark)">
-    rect { fill: deeppink }
-  </style>
-  <title>
-    hotpink in light mode,
-    deeppink in dark mode
-  </title>
-  <rect fill="hotpink" width="100%" height="100%" />
+<svg xmlns="http://www.w3.org/2000/svg">
+  <title>rainbow</title>
+  <style>svg { background: coral }</style>
+  <rect fill="plum" width="100%" height="14.3%" y="0" />
+  <rect fill="violet" width="100%" height="14.3%" y="14.3%" />
+  <rect fill="fuchsia" width="100%" height="14.3%" y="28.6%" />
+  <rect fill="hotpink" width="100%" height="14.3%" y="42.9%" />
+  <rect fill="deeppink" width="100%" height="14.3%" y="57.2%" />
+  <rect fill="darkviolet" width="100%" height="14.3%" y="71.5%" />
+  <rect fill="salmon" width="100%" height="14.3%" y="85.8%" />
 </svg>
